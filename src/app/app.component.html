@@ -1,3 +1,38 @@
+<h2>{{ title }}</h2>
+<!-- uppercase pipe -->
+<h2>{{ title | uppercase}}</h2>
+<!-- lowercase pipe -->
+<h2>{{ title | lowercase}}</h2>
+<!-- titlecase pipe -->
+<h2>{{ title | titlecase}}</h2>
+<!-- slice pipe which extracts data from the 3 index -->
+<h2>{{ title | slice:3}}</h2>
+<!-- slice pipe which extracts data from the 3rd index to the 10th index-->
+<h2>{{ title | slice:3:10}}</h2>
+<!-- json pipe which is used to present the object value as json response -->
+<h2>{{ person | json}}</h2>
+<!-- number pipe -->
+<h2>{{ 7.89654128 | number:'1.2-5'}}</h2>
+<h2>{{ 7.89654128 | number:'1.2-3'}}</h2>
+<h2>{{ 7.89654128 | number:'4.2-8'}}</h2>
+<!-- percent pipe -->
+<h2>{{ 0.579 | percent}}</h2>
+<!-- currency pipe -->
+<h2>{{ 0.25 | currency }}</h2>
+<h2>{{ 0.25 | currency: 'INR' }}</h2>
+<h2>{{ 0.25 | currency: 'INR': 'INR ' }}</h2>
+<!-- date pipe -->
+<h2>{{ date }}</h2>
+<h2>{{ date | date }}</h2>
+<h2>{{ date | date:'short'}}</h2>
+<h2>{{ date | date:'shortDate'}}</h2>
+<h2>{{ date | date:'shortTime'}}</h2>
+
+<br>
+<br>
+<br>
+<br>
+<br>
 <!-- we passed the value of list to the addItem function -->
 <app-first (list)="addItem($event)"></app-first>
 <br>
