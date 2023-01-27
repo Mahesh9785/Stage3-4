@@ -1,0 +1,11 @@
+<h1>This is the First Component</h1>
+<br>
+<br>
+<input type="text" #inputValue placeholder="Enter your name">
+<br>
+<br>
+<!-- On the button click the save function will be called -->
+<button (click)="save(inputValue.value)">Submit</button>
+
+<!-- the user input is sent to the Second component -->
+<app-second [valueFromChild]="userInput"></app-second>
